@@ -1,0 +1,66 @@
+* {
+  outline: dotted 1px orange;
+}
+
+body {
+  font-family: sans-sarif;
+}
+
+header {
+  font-family: sans-sarif;
+  background: #999;
+  height: 280px;
+  margin-bottom: 40px;
+}
+
+header div {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header div img {
+  padding-top:20px;
+  padding-left: 165px;
+  margins: 15 auto 15;
+}
+
+nav {
+  margin-top: 20px;
+  padding-left: 165px;
+  text-align: center;
+}
+.menu li {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.sales-div {
+    width: 960px;
+  margin: 0 auto;
+}
+
+.sales-ul {
+  position: relative;
+}
+
+content div ul img {
+  margin-bottom: 30px;
+}
+
+content div ul p {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 20px;
+
+}
+
+.sales-li {
+  float:left;
+  margin-right: 30px;
+}
+
+.sales-li:last-child {
+  margin-right: 0px;
+}

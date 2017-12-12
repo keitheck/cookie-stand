@@ -2,8 +2,6 @@
 
 var storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 
-
-
 var pike = {
   custMin: 23,
   custMax: 65,
@@ -22,6 +20,31 @@ var pike = {
 //console.log(pike.cookiesTotal());
 var cookiesTotalArr = pike.cookiesTotal();
 console.log(cookiesTotalArr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
