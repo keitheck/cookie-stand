@@ -22,7 +22,7 @@ var pikePlaceMarket = {
   calcCookiesEachHour: function() {
     this.calcCustomersEachHour();
     for(var i = 0; i < hours.length; i++){
-      var oneHour = Math.ceil(this.customersEachHour[i] + this.avgCookiesPerCust);
+      var oneHour = Math.ceil(this.custEachHour[i] * this.avgCookiesPerCust);
       console.log(oneHour, 'one hour');
       this.cookiesEachHour.push(oneHour);
       this.totalDailySales += oneHour;
@@ -30,6 +30,22 @@ var pikePlaceMarket = {
     }
   },
   render: function(){
+    this.calcCookiesEachHour();
+    //access the element in the DOM where our stuff will go
+    var ulEl = document.getElementById('pike');
 
+    for(var i = 0; i < hours.lenght; i++){
+      //create an element
+      var liEl = document.createElement('li');
+      //give it content
+      liEl.textContent = hours[i] + ': ' + this.cookiesEachHour[i] + ' cookies';
+      //append it to the parent
+      ulEl.appendChild(liEl);
+    }
+    liEl = document.createElement('li');
+    liEl.textContent = 'Total: ' + this.totalDailySales + ' cookies';
+    ulEl.appendChild(liEl);
   }
 };
+
+pikePlaceMarket.render();
