@@ -1,21 +1,34 @@
-* {
-  outline: dotted 1px orange;
-}
+ /** {
+  outline: dotted 1px #999;
+}*/
 
 body {
   font-family: sans-sarif;
 }
 
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: #FFD9C7;
+}
+
 header {
-  font-family: sans-sarif;
-  background: #999;
+  background: #fff;
   height: 280px;
   margin-bottom: 40px;
+  postion: relative;
 }
 
 header div {
   width: 960px;
   margin: 0 auto;
+
+}
+header h1 {
+  position: absolute;
+  margin-left:420px;
+  margin-top: 108px;
 }
 
 header div img {
@@ -25,9 +38,12 @@ header div img {
 }
 
 nav {
+  color: #FF8558;
   margin-top: 20px;
   padding-left: 165px;
   text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 22px;
 }
 .menu li {
   display: inline-block;
@@ -35,6 +51,18 @@ nav {
   margin-right: 20px;
   margin-bottom: 10px;
 }
+
+main {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFD9C7;
+  width: 960px
+  align: 0 auto;
+
+}
+
+
 
 .sales-div {
     width: 960px;
@@ -59,6 +87,7 @@ content div ul p {
 .sales-li {
   float:left;
   margin-right: 30px;
+  box-shadow: 0px 0px 20px #999;
 }
 
 .sales-li:last-child {
