@@ -32,6 +32,8 @@ var timeRow = function() {
 
 salmonSalesTable.appendChild(timeRow());
 
+var storeList = [];
+
 function SalmonStores(name, minCustsPerHour, maxCustsPerHour, avgCookiesPerCust) {
   this.name = name;
   this.minCustsPerHour = minCustsPerHour;
@@ -74,10 +76,18 @@ function SalmonStores(name, minCustsPerHour, maxCustsPerHour, avgCookiesPerCust)
     }
     return row;
   };
-  salmonSalesTable.appendChild(render());
+
+
+
 }
 
-SalmonStores('1st and Pike', 23, 65, 6.3);
+new SalmonStores('1st and Pike', 23, 65, 6.3);
+
+//make for loop outside constructor to output rows to dom.
+// for
+// storelist.appendChild(this.render());
+
+
 //---------------------------------------------------------------------------
 //render code from day 1 to reference
 
