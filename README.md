@@ -2,7 +2,10 @@
 
 Lab Week 2 Codefellows 201
 
-### Developed by Keith Eckert
+### JOURNAL
+
+##Tuesday
+ -that to evoke a constructor notation requires "new" to be placed in front of the function name to evoke, else it will break the code.
 
 
 ```sh
