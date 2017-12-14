@@ -4,8 +4,14 @@ Lab Week 2 Codefellows 201
 
 ### JOURNAL
 
-##Tuesday
+## Tuesday
  -that to evoke a constructor notation requires "new" to be placed in front of the function name to evoke, else it will break the code.
+
+### Wednesday
+-Learned how to next for loops to extract data from nexted arrays.  It took awhile to get my head around the idea and it took several approaches to land on the for loop inside a for loop, but it worked.  Would be interested in how other people solved this.
+
+-Condinued to practice adding elements and text into the DOM using JavaScript.  Was able to write a few functions to do this without referencing notes, but had to debug using the console in chrome. 
+
 
 
 ```sh
