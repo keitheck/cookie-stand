@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>]
+    <title>entry form</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+  <header>
+    <h1 class="logo">SALMON COOKIES</h1>
+    <div>
+      <img src="salmon2.png">
+
+    </div>
+    <div>
+       <nav class="menu">
+          <ul>
+            <li>Buy Cookies </li>
+            <li>Buy Swag </li>
+            <li>My Account </li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+       </nav>
+    </div>
+  </header>
+  <main>
+    <!-- //form fields needed
+    //storeName, minCustsPerHour, maxCustsPerHour, avgCookiesPerCust -->
+
+    <form id="entry-form">
+      <fieldset>
+        <label for="new-store">New Store Name</label>
+        <input type="text" name="new-store" placeholder="New store name" minLength="1" required>
+      </fieldset>
+      <fieldset>
+        <label for="min-cust">Min Customers Each Hour</label>
+        <input type="number" name="min-cust" placeholder="0" minLength="1" required>
+      </fieldset>
+      <fieldset>
+        <label for="max-cust">Max Customers Each Hour</label>
+        <input type="number" step="any" name="max-cust" placeholder="0" minLength="1" required>
+      </fieldset>
+      <fieldset>
+        <label for="avg-cookies">Average # Cookies Per Customer</label>
+        <input type="number" name="avg-cookies" placeholder="0" minLength="1" required>
+      </fieldset>
+
+      <button id="submit-button" type="sumbit"> Add New Store</button>
+
+    </form>
+
+
+  </main>
+
+</body>
+
+
+</html>

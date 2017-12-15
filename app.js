@@ -7,10 +7,15 @@
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm','7pm'];
 
 var salesTable = document.getElementById('salmon-sales-table');
-makeHeaderRow();
 
+var form = document.getElementById('entry-form');
+
+//form code -----------------------------------------------------
 var storeInfoList = [];
 
+
+
+//main constructor below:
 function SalmonStores(storeName, minCustsPerHour, maxCustsPerHour, avgCookiesPerCust) {
   this.name = storeName;
   this.minCustsPerHour = minCustsPerHour;
@@ -63,6 +68,7 @@ new SalmonStores('Seattle Center', 11, 38,3.7);
 new SalmonStores('Capitol Hill', 20,38, 2.3);
 new SalmonStores('Alki', 2, 16,4.6);
 
+
 //---------------------------------------------------------------
 //DEFINE ACTIONS (DECLARE VARIABLES)
 //---------------------------------------------------------------
@@ -70,8 +76,6 @@ new SalmonStores('Alki', 2, 16,4.6);
 function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min; //via MDN docs
 }
-
-
 
 
 for(var i = 0; i < storeInfoList.length; i++){
@@ -83,11 +87,31 @@ console.log('dailyTotal', dailyTotal);
 //DO ACTIONS
 //---------------------------------------------------------------
 
-for(var j = 0; j < storeInfoList.length; j++){
-  storeInfoList[j].render();
+
+//Gather Form Data:
+var form = document.getElementById('entry-form');
+
+function formData(event) {
+  event.preventDefault();
+
+  var storeName = event.target.new_store.value;
+  var minCustsPerHour = event.target.min_cust.value;
+  var maxCustsPerHour = event.target.max_cust.value;
+  var avgCookiesPerCust = event.target.avg_cookies.value;
+
+  minCustsPerHour = parseInt(minCustsPerHour);
+  maxCustsPerHour = parseInt(maxCustsPerHour);
+  avgCookiesPerCust = parseInt(maxCustsPerHour);
+  new SalmonStores(storeName, minCustsPerHour, maxCustsPerHour, avgCookiesPerCust);
+  form.reset();
+  storeInfoList[storeInfoList.length - 1].render();
 }
 
+form.addEventListener('submit', formData);
 
+
+
+//Makes Table Header Row
 function makeHeaderRow(){
   var tableRowEl = document.createElement('tr');
   var tableHeaderEl = document.createElement('th');
@@ -107,8 +131,11 @@ function makeHeaderRow(){
 
 };
 
+makeHeaderRow();
 
-
+for(var j = 0; j < storeInfoList.length; j++){
+  storeInfoList[j].render();
+}
 
 
 //END

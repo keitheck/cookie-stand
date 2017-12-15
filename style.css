@@ -1,9 +1,12 @@
-/** {
+* {
  outline: dotted 1px #999;
-}*/
+}
 
 body {
  font-family: sans-sarif;
+}
+a {
+  color: #FF8558;
 }
 
 h1 {
@@ -66,14 +69,9 @@ main {
  font-family: 'Ubuntu', sans-serif;
  font-size: 18px;
  font-weight: bold;
- color: #FFD9C7;
+ color: #FF8558;
 
 }
-
-/* content {
- width: 960px
- align: 0 auto;
-} */
 
 main content div {
  margin-bottom: 30px;
@@ -139,4 +137,38 @@ content div ul p {
 
 .image-li:last-child {
   margin-right: 0px;
+}
+
+.salmon-table-div {
+  width: 960px;
+  padding: 50px;
+}
+
+table {
+  margin: 50px;
+  width: 960px
+  background-color: #999;
+  width: 100%;
+}
+
+th {
+  color: #FFD9C7;
+  background-color: #333;
+  padding: 10px;
+}
+
+tr td {
+  border: 1px solid #333;
+  background-color: #666;
+  padding: 10px;
+  text-align:center;
+}
+
+tr:last-child {
+  color: #37E0D2;
+
+}
+td:last-child {
+  color: #37E0D2;
+
 }
