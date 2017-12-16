@@ -88,7 +88,7 @@ console.log('dailyTotal', dailyTotal);
 //---------------------------------------------------------------
 
 
-//Gather Form Data:
+//Gather Form Data.  This waits to run until the event listener "submit" is actuated on 'entry-form':
 var form = document.getElementById('entry-form');
 
 function formData(event) {
